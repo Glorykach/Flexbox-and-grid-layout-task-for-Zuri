@@ -1,0 +1,249 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:  hsl(0, 0%, 95%);
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .BIG-CONTAINER{
+        width: 50%; 
+        margin: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100vh;
+        flex-direction: row;
+        padding: 1em;
+    
+    }
+    .SEDANS{
+        background-color: hsl(31, 77%, 52%);
+        padding:2em;
+        width: 100%;
+        height: 55%;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 9px 0 0 9px;
+    
+    }
+    .SEDANS h1{
+      font-size: 24px;  
+      padding-bottom: 10px;
+      color:  hsl(0, 0%, 95%);
+      font-weight: 700;
+      font-family:'Big Shoulders Display';
+    }
+    .sedan-btn{
+        color:hsl(31, 77%, 52%);
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 20px;
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 12px;
+        height: 30px;
+        width:100px;
+        cursor: pointer;
+        border: none;
+    }
+    .sedan-btn:hover{
+        background-color: hsl(31, 77%, 52%);
+        color: hsl(0, 0%, 95%);
+        border-color: white;
+        border: solid thin;
+    }
+    .SUVS{
+        background-color: hsl(184, 100%, 22%);
+        padding: 2em;
+        width: 100%;
+        height: 55%;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+    
+    }
+    .SUVS h1{
+      font-size: 24px;  
+      padding-bottom: 10px;
+      color: hsl(0, 0%, 95%);
+      font-weight: 700;
+      font-family:'Big Shoulders Display';
+    }
+    .suv-btn{
+        color:hsl(184, 100%, 22%);
+        background-color: hsl(0, 0%, 95%);
+        font-size: 12px;
+        border-radius: 20px;
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        height: 30px;
+        width:100px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        top: 1%;
+    }
+    .suv-btn:hover{
+        background-color: hsl(184, 100%, 22%);
+        color: hsl(0, 0%, 95%);
+        border-color: white;
+        border: solid thin;
+    }
+    .LUXURY{
+        background-color: hsl(179, 100%, 13%);
+        padding: 2em;
+        width: 100%;
+        height: 55%;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 0 9px 9px 0;
+    
+    }
+    .LUXURY h1{
+      font-size: 26px;  
+      padding-bottom: 10px;
+      color: hsl(0, 0%, 95%);
+      font-weight: 700;
+      font-family:'Big Shoulders Display';
+    }
+    .luxury-btn{
+        color:hsl(179, 100%, 13%);
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 20px;
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 12px;
+        height: 30px;
+        width:100px;
+        cursor: pointer;
+        border: none;
+    }
+    .luxury-btn:hover{
+        background-color: hsl(179, 100%, 13%);
+        color: hsl(0, 0%, 95%);
+        border-color: white;
+        border: solid thin;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .griddy{
+        list-style-type: none;
+        margin: 0;
+        padding: 1px;
+        overflow: hidden;
+        background-color: black;
+        
+    }
+        li{
+        float:right;
+    }
+    li a{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px bold;
+        color: rgb(253, 0, 0);
+        display: block;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        height: 8%;
+        width: 80%;
+    }
+    li a{
+        background-color: hsl(0, 0%, 95%);
+    }
+    .griid{
+        background-color: black;
+    }
+    
+    .active{
+        border-radius: 20px;
+        background-color: hsl(31, 77%, 52%);
+        font-weight: bold;
+        color: hsl(0, 0%, 95%);
+        height: 5%;
+        width: 80%;
+    }
+    .active2{
+        border-radius: 20px;
+        background-color: hsl(9, 50%, 39%);
+        font-weight: bold;
+        color: hsl(0, 0%, 95%);
+        height: 5%;
+        width: 80%;
+    }
+    .BODY{
+        background-color: black;
+        place-items: center;
+        height: 100%;
+    }
+    .MAIN{
+        display: grid;
+        grid-template-areas:
+        'item-a item-a item-a item-b'
+        'item-a item-a item-a item-b'
+        'item-c item-c item-d item-d'
+        'item-c item-c item-e item-e' ;
+        gap: 8px;
+        width: 50%;
+        height: 100px;
+        margin: auto;
+        
+    }
+    .item-a{
+        background-color: rgb(194, 31, 63);
+        grid-area: item-a;
+        height: 200px;
+        color: rgb(194, 31, 63);
+        position: relative;
+        top: 52px;
+    }
+    .item-b{
+        background-color: rgb(216, 153, 35);
+        grid-area: item-b;
+        height: 200px;
+        color: rgb(216, 153, 35);
+        position: relative;
+        top: 52px;
+    }
+    .item-c{
+        background-color: rgb(3, 175, 3);
+        grid-area: item-c;
+        height: 200px;
+        color: rgb(3, 175, 3);
+        position: relative;
+        top: 53px;
+    }
+    .item-d{
+        background-color: rgb(35, 162, 204);
+        grid-area: item-d;
+        height: 90px;
+        color: rgb(35, 162, 204);
+        position: relative;
+        top: 53px;
+    }
+    .item-e{
+        background-color: rgb(35, 162, 204);
+        grid-area: item-e;
+        height: 100px;
+        color: rgb(35, 162, 204);
+        position: relative;
+        top: 53px;
+    }
+    
+
+
+    
